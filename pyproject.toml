@@ -6,8 +6,18 @@ authors = ["Dan Gale <dan@voxel.ai>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
+nilearn = "^0.10.2"
+nibabel = "^5.1.0"
+pandas = "^1.5.3"
 
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "4.0.1"
+reorder-python-imports = "^3.9.0"
+pytest = "^7.2.1"
+bump2version = "^1.0.1"
+pre-commit = "^3.1.1"
 
 [build-system]
 requires = ["poetry-core"]
