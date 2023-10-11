@@ -206,13 +206,13 @@ def get_parcellations(resolution: int = 2, overwrite: bool = False) -> list:
 
     parc_list = []
     for i in range(100, 1100, 100):
-        parc_list.append(fetch_schaefer(i, resolution, overwrite))
+        parc_list.append(fetch_schaefer(i, resolution, overwrite=overwrite))
 
     for i in range(1, 4):
-        parc_list.append(fetch_tian(i, resolution, overwrite))
+        parc_list.append(fetch_tian(i, resolution, overwrite=overwrite))
 
-    parc_list.append(fetch_diedrichsen(resolution, overwrite))
-    parc_list.append(fetch_buckner(resolution, overwrite))
+    parc_list.append(fetch_diedrichsen(resolution, overwrite=overwrite))
+    parc_list.append(fetch_buckner(resolution, overwrite=overwrite))
     return parc_list
 
 
