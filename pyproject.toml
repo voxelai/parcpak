@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "parcpak"
-version = "23.10.0rc1"
+version = "23.10.0rc2"
 description = ""
 authors = ["Dan Gale <dan@voxel.ai>"]
 readme = "README.md"
